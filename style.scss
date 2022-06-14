@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Muli", sans-serif;
+  font-family: 'Muli', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,9 +17,7 @@ body {
 .container {
   display: flex;
   width: 90vw;
-}
-@media (max-width: 490px) {
-  .container {
+  @media (max-width: 490px) {
     width: 100vw;
   }
 }
@@ -38,9 +37,9 @@ body {
   -webkit-transition: all 0.7s ease-in 0s;
 }
 
-@media (max-width: 490px) {
-  .panel:nth-of-type(4),
+.panel:nth-of-type(4),
 .panel:nth-of-type(5) {
+  @media (max-width: 490px) {
     display: none;
   }
 }
@@ -53,9 +52,8 @@ body {
   margin: 0;
   opacity: 0;
   white-space: nowrap;
-}
-@media (max-width: 490px) {
-  .panel h3 {
+
+  @media (max-width: 490px) {
     font-size: 28px;
   }
 }
@@ -68,5 +66,3 @@ body {
   opacity: 1;
   transition: opacity 0.5s ease-in 0.45s;
 }
-
-/*# sourceMappingURL=style.css.map */
